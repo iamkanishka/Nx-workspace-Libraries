@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-libraries-demo/buildable-library": [
+        "buildable-library/src/index.ts"
+      ],
       "@angular-libraries-demo/workspace-library": [
         "workspace-library/src/index.ts"
       ]

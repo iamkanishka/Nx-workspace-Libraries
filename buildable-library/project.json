@@ -1,0 +1,26 @@
+{
+  "name": "buildable-library",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "buildable-library/src",
+  "prefix": "angular-libraries-demo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "buildable-library/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "buildable-library/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "buildable-library/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}
