@@ -1,0 +1,9 @@
+{
+  "name": "workspace-library",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "workspace-library/src",
+  "prefix": "angular-libraries-demo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
