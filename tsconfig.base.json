@@ -20,6 +20,12 @@
       ],
       "@angular-libraries-demo/workspace-library": [
         "workspace-library/src/index.ts"
+      ],
+      "@atomlessmind/publishable-library": [
+        "publishable-library/src/index.ts"
+      ],
+      "@atomlessmind/publishable-library/testing": [
+        "publishable-library/testing/src/index.ts"
       ]
     }
   },

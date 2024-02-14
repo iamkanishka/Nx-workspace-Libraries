@@ -1,0 +1,26 @@
+{
+  "name": "publishable-library",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "publishable-library/src",
+  "prefix": "angular-libraries-demo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "publishable-library/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "publishable-library/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "publishable-library/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}
